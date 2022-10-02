@@ -16,7 +16,7 @@ steps:
     versionSpec: '11'
     jdkArchitectureOption: 'x64'
     jdkSourceOption: 'LocalDirectory'
-    jdkFile: 'C:\agent\builds'
+    jdkFile: 'C:\agent\builds\openlogic-openjdk-11.0.16+8-windows-x64.zip'
     jdkDestinationDirectory: 'C:\agent\builds\JAva'
     cleanDestinationDirectory: true
 
