@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: DESKTOP-MTM9E3G
 
 steps:
 - task: Maven@3
