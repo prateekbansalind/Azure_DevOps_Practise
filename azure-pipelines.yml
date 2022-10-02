@@ -32,9 +32,9 @@ steps:
     goals: 'package'
 - task: CopyFiles@2
   inputs:
-    SourceFolder: '$(agent.builddirectory)'
+    SourceFolder: 'C:\agent\_work\1\s\webapp\target'
     Contents: '**/.war'
-    TargetFolder: '$(build.artifactstagingdirectory)'
+    TargetFolder: 'C:\agent\_work\1\a'
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
