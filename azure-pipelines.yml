@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: DESKTOP-MTM9E3G
+  name: Default
 
 steps:
 - task: Maven@3
