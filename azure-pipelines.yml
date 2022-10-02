@@ -10,12 +10,16 @@ pool:
   name: Default
 
 steps:
+
 - task: JavaToolInstaller@0
-      jdkArchitectureOption: x64
-      jdkSourceOption: LocalDirectory
-      jdkFile: "/builds/openlogic-openjdk-11.0.16+8-windows-x64.zip"
-      jdkDestinationDirectory: "/builds/binaries/externals"
-      cleanDestinationDirectory: true
+  inputs:
+    versionSpec: '11'
+    jdkArchitectureOption: 'x64'
+    jdkSourceOption: 'LocalDirectory'
+    jdkFile: 'C:\agent\builds'
+    jdkDestinationDirectory: 'C:\agent\builds\JAva'
+    cleanDestinationDirectory: true
+
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
